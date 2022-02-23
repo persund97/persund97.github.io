@@ -1800,7 +1800,7 @@ input, select, textarea {
 				font-size: 0.8em;
 			}
 
-			#nav a:after, #social a:after {
+			#nav a:after {
 				content: '';
 				display: block;
 				position: absolute;
@@ -1871,7 +1871,7 @@ input, select, textarea {
 
 		}
 
-/* Socials */
+/* Social */
 
     #social {
         cursor: default;
@@ -1895,30 +1895,15 @@ input, select, textarea {
         transition: opacity .25s ease-in-out;
     }
 
-    #twitter {
-        color: #1DA1F2;
+    #social a:visited {
+        opacity: 0.35;
     }
 
-    #instagram {
-        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-       -webkit-text-fill-color:transparent;
-    }
+/* Description */
 
-    #linkedin {
-        color: #2867B2;
-    }
-
-    #github {
-        color: #333;
-    }
-
-    #facebook {
-        color: #4267B2;
+    .description {
+        position: relative;
+        top: 30px;
     }
 
 /* Wrapper */
