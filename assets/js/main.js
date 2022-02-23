@@ -118,7 +118,31 @@
 
                 // Pauses videos on panel switch.
 					if($panel.not("#work")) {
-                        $(".vid").trigger('pause');
+					
+					    var video1 = $("#playerone").attr("src");
+					    var video2 = $("#playertwo").attr("src");
+					    var video3 = $("#playerthree").attr("src");
+					    var video4 = $("#playerfour").attr("src");
+					    var video5 = $("#playerfive").attr("src");
+					    var video6 = $("#playersix").attr("src");
+
+                        $("#playerone").attr("src","");
+                        $("#playerone").attr("src",video1);
+
+                        $("#playertwo").attr("src","");
+                        $("#playertwo").attr("src",video2);
+
+                        $("#playerthree").attr("src","");
+                        $("#playerthree").attr("src",video3);
+
+                        $("#playerfour").attr("src","");
+                        $("#playerfour").attr("src",video4);
+
+                        $("#playerfive").attr("src","");
+                        $("#playerfive").attr("src",video5);
+
+                        $("#playersix").attr("src","");
+                        $("#playersix").attr("src",video6);
                     };
 
 				// Deactivate all links.
