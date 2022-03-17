@@ -1437,86 +1437,6 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
-/* Table */
-
-	table {
-		width: 100%;
-	}
-
-		table.default tbody tr {
-			border-bottom: solid 1px #f4f4f4;
-		}
-
-		table.default td {
-			padding: 0.5em 1em 0.5em 1em;
-		}
-
-		table.default th {
-			text-align: left;
-			font-weight: 400;
-			padding: 0.5em 1em 0.5em 1em;
-		}
-
-		table.default thead {
-			border-bottom: solid 2px #f4f4f4;
-		}
-
-/* Form */
-
-	form label {
-		display: block;
-		font-weight: 400;
-		color: #363636;
-		margin: 0 0 1em 0;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		-webkit-appearance: none;
-		border: 0;
-		background: #f4f4f4;
-		padding: 0.75em;
-		width: 100%;
-		-moz-transition: background-color .25s ease-in-out;
-		-webkit-transition: background-color .25s ease-in-out;
-		-ms-transition: background-color .25s ease-in-out;
-		transition: background-color .25s ease-in-out;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background: #f8f8f8;
-		}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select {
-		line-height: 1.35em;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #999;
-	}
-
-	form :-moz-placeholder {
-		color: #999;
-	}
-
-	form ::-moz-placeholder {
-		color: #999;
-	}
-
-	form :-ms-input-placeholder {
-		color: #999;
-	}
-
 /* Section/Article */
 
 	section, article {
@@ -1544,7 +1464,7 @@ input, select, textarea {
 
 		}
 
-/* Frame */
+/* Work */
 
     .video {
         position: relative;
@@ -1565,104 +1485,81 @@ input, select, textarea {
         border: none;
     }
 
-/* Button */
+/* Image */
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		-moz-transition: background-color .25s ease-in-out;
-		-webkit-transition: background-color .25s ease-in-out;
-		-ms-transition: background-color .25s ease-in-out;
-		transition: background-color .25s ease-in-out;
-		-webkit-appearance: none;
-		display: inline-block;
-		background-color: #222222;
-		color: #ffffff;
-		border: 0;
-		cursor: pointer;
-		outline: 0;
-		padding: 0.7em 1.5em 0.7em 1.5em;
-	}
+    .image.fit {
+        display: block;
+        position: relative;
+        width: 60%;
+        margin: auto;
+    }
+        .image {
+            display: inline-block;
+        }
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		.button:hover {
-			background-color: #333333;
-		}
+        .image img {
+            display: block;
+            width: 100%;
+        }
 
-		input[type="button"]:active,
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		button:active,
-		.button:active {
-			background-color: #444444;
-		}
+/* Competence */
 
-		input[type="button"].alt,
-		input[type="submit"].alt,
-		input[type="reset"].alt,
-		button.alt,
-		.button.alt {
-			background-color: #777777;
-		}
+    .competence-name, .description {
+        text-align: center;
+    }
 
-			input[type="button"].alt:hover,
-			input[type="submit"].alt:hover,
-			input[type="reset"].alt:hover,
-			button.alt:hover,
-			.button.alt:hover {
-				background-color: #888888;
-			}
+        .underline {
+            content: '';
+            display: block;
+            width: 50%;
+            background-color: #dfa898ff;
+            padding: 5px;
+            margin: auto
+        }
 
-			input[type="button"].alt:active,
-			input[type="submit"].alt:active,
-			input[type="reset"].alt:active,
-			button.alt:active,
-			.button.alt:active {
-				background-color: #999999;
-			}
+/* Experience */
 
-		input[type="button"].small,
-		input[type="submit"].small,
-		input[type="reset"].small,
-		button.small,
-		.button.small {
-			font-size: 0.75em;
-		}
 
-		input[type="button"].large,
-		input[type="submit"].large,
-		input[type="reset"].large,
-		button.large,
-		.button.large {
-			font-size: 1.25em;
-			padding: 0.5em 1.25em 0.5em 1.25em;
-		}
 
-		input[type="button"].xlarge,
-		input[type="submit"].xlarge,
-		input[type="reset"].xlarge,
-		button.xlarge,
-		.button.xlarge {
-			font-size: 1.5em;
-			padding: 0.5em 1.25em 0.5em 1.25em;
-		}
+/* Info Panel */
 
-		@media screen and (max-width: 736px) {
+    .info-panel {
+        position: relative;
+        background-color: #f4f4f4;
+        height: 3em;
+        border-radius: 50px / 200px;
+        padding: 20px;
+    }
 
-			input[type="button"],
-			input[type="submit"],
-			input[type="reset"],
-			button,
-			.button {
-				width: 100%;
-			}
+        #mob-number {
+            cursor: default;
+            position: absolute;
+            text-align: left;
+            top: 20%;
+        }
 
-		}
+        #mail-panel {
+            text-decoration: none;
+            color: inherit;
+        }
+
+            #mail-panel p {
+                position: absolute;
+                text-align: left;
+                top: 20%;
+            }
+
+        @media (hover: hover) {
+            .info-panel:hover {
+                background-color: #ededed;
+            }
+        }
+
+        @media screen and (min-width: 1366px) {
+            .info-panel p {
+                font-size: 30px;
+            }
+        }
 
 /* List */
 
@@ -1855,35 +1752,47 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 286px) {
+		    #nav a {
+		        font-size: 2em;
+		        top: 18%;
+		    }
+		}
+
 /* Social */
 
     #social {
         cursor: default;
     }
 
-    #social a {
-        position: relative;
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        line-height: 0.9em;
-        font-size: 2.5em;
-        margin: 0 0.25em 0 0.25em;
-        opacity: 0.35;
-        outline: 0;
-        text-align: center;
-        vertical-align: center;
-        -moz-transition: opacity .25s ease-in-out;
-        -webkit-transition: opacity .25s ease-in-out;
-        -ms-transition: opacity .25s ease-in-out;
-        transition: opacity .25s ease-in-out;
-    }
+        #social a {
+            position: relative;
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            line-height: 0.9em;
+            font-size: 2.5em;
+            margin: 0 0.25em 0 0.25em;
+            opacity: 0.35;
+            outline: 0;
+            text-align: center;
+            vertical-align: center;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+            -ms-transition: opacity .25s ease-in-out;
+            transition: opacity .25s ease-in-out;
+        }
 
-    @media (hover: hover) {
         #social a:hover {
             opacity: 1;
         }
-    }
+
+        @media (hover: none) {
+            #social a:hover {
+                opacity: 0.20;
+            }
+        }
+
 /* Description */
 
     .description {
