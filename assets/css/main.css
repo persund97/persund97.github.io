@@ -1791,6 +1791,11 @@ input, select, textarea {
             #social a:hover {
                 opacity: 0.20;
             }
+
+            #social a:focus, #social a:active, #mail-panel a:focus, #mail-panel a:active {
+                text-decoration: none;
+                color: inherit;
+            }
         }
 
 /* Description */
