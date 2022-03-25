@@ -117,7 +117,12 @@
 					$panels.addClass('inactive');
 
                 // Stops video players on panel change.
-					if($panel.attr('id') != 'work') {
+
+                    var prevId = $panel.parent().children('.active-panel').index() + 1;
+                    $panel.siblings().removeClass('active-panel');
+                    $panel.addClass('active-panel');
+
+					if(prevId === 2) {
                         $(".vidPlayer").attr("src", "");
 
                         $('.vidPlayer').each(function (index) {
