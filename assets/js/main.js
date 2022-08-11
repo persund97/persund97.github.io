@@ -116,20 +116,6 @@
 				// Deactivate all panels.
 					$panels.addClass('inactive');
 
-                // Stops video players on panel change.
-
-                    var prevId = $panel.parent().children('.active-panel').index() + 1;
-                    $panel.siblings().removeClass('active-panel');
-                    $panel.addClass('active-panel');
-
-					if(prevId === 2) {
-                        $(".vidPlayer").attr("src", "");
-
-                        $('.vidPlayer').each(function (index) {
-                            $(this).attr("src", vidPlayerSrc[index]);
-                        });
-                    }
-
 				// Deactivate all links.
 					$nav_links.removeClass('active');
 

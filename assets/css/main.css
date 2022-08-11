@@ -1502,17 +1502,16 @@ input, select, textarea {
             width: 100%;
         }
 
-/* Competence */
+/* Qualifications */
 
-    .competence-name, .description {
+    .qualifications-name, .description {
         text-align: center;
     }
 
-        .underline {
-            content: '';
+        .rating {
             display: block;
-            width: 50%;
-            background-color: #dfa898ff;
+            text-align: center;
+            color: #dfa898ff;
             padding: 5px;
             margin: auto
         }
