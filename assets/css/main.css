@@ -1502,9 +1502,9 @@ input, select, textarea {
             width: 100%;
         }
 
-/* Qualifications */
+/* Skills */
 
-    .qualifications-name, .description {
+    .skill-name, .description {
         text-align: center;
     }
 
