@@ -1559,6 +1559,10 @@ input, select, textarea {
                 font-size: 30px;
             }
         }
+		
+		#introText {
+			color: #666666;
+		}
 
 /* List */
 
@@ -1803,6 +1807,14 @@ input, select, textarea {
         position: relative;
         top: 30px;
     }
+	
+	.descriptionTitle {
+		text-align: center;
+	}
+	
+	.descriptionText {
+		text-align: left;
+	}
 
 /* Wrapper */
 
