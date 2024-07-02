@@ -1327,7 +1327,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #777777;
+		color: #666666;
 		font-size: 20pt;
 		line-height: 1.75em;
 	}
@@ -1453,7 +1453,7 @@ input, select, textarea {
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			color: #666666;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1504,7 +1504,7 @@ input, select, textarea {
 
 /* Skills */
 
-    .skill-name, .description {
+    .skill-name {
         text-align: center;
     }
 
