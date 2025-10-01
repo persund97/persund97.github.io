@@ -213,5 +213,28 @@
         $(".vidPlayer").map(function() {
             vidPlayerSrc.push($(this).attr('src'));
         }).get();
+		
+		// Stop videos when switching panels
+		$window.on('hashchange', function() {
+		// Only run if leaving the #work panel
+			if (window.location.hash !== '#work') {
+				$(".vidPlayer").each(function(index) {
+					$(this).attr('src', vidPlayerSrc[index]);
+				});
+			}
+		});
+		
+		document.querySelectorAll('.toggle-btn').forEach(button => {
+			button.addEventListener('click', () => {
+				const text = button.previousElementSibling;
+				text.classList.toggle('open');
+    
+				if (text.classList.contains('open')) {
+					button.textContent = "Show less ▲";
+				} else {
+					button.textContent = "Show more ▼";
+				}
+			});
+		});
 
 })(jQuery);
