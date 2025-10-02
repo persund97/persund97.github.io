@@ -1871,7 +1871,7 @@ input, select, textarea {
 	}
 	
 	.descriptionText.open {
-		max-height: 2000px;
+		max-height: 2500px;
 	}
 	
 	.page-description {
